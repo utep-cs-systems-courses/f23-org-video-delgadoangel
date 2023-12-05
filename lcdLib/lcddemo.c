@@ -19,5 +19,8 @@ main()
   drawString5x7(20,20, "hello", COLOR_GREEN, COLOR_RED);
 
   fillRectangle(30,30, 60, 60, COLOR_ORANGE);
-  
+  for (int i = 0; i < 30; i++) {
+    drawPixel(i, i, COLOR_PINK);
+    drawPixel(screenWidth - i, i, COLOR_BLACK);
+  }
 }
